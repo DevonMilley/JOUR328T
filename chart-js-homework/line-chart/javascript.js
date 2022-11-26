@@ -3,14 +3,15 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["Sandy Hook Elementary School", "Robb Elementary School", "Marjory Stoneman Douglas High School",
-        "Columbine High School", "Santa Fe High School", "Red Lake High School", "West Nickel Mines Amish School",
-        "Oxford High School", "Marysville Pilchuck High School"],
+        labels: ["1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006",
+        "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015",
+        "2016", "2017", "2018", "2019", "2020", "2021", "2022"],
         datasets: [{
-            label: 'Number of people killed',
-            data: [26, 21, 17, 13, 10, 7, 5, 4, 4],
+            label: 'Year',
+            data: [7, 12, 13, 5, 12, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16,
+                7, 13, 15, 30, 27, 9, 42, 25],
             backgroundColor: [
-                '#6A111F'
+                '#991E29'
             ]
         },
     ]
@@ -20,14 +21,14 @@ var myChart = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Top 10 deadliest school shootings',
+                text: '2021 saw the highest number of school shootings in more than two decades',
                 font: {
                     size: 18
                 }
             },
             subtitle: {
                 display: true,
-                text: 'The shooting at Sandy Hook Elementary School in 2012 is the most deadly with 26 people killed and 28 casualties overall. There are other shootings that have had more overall casualties.'
+                text: 'In the past seven years, the number of school shootings per year has seen a dramatic increase.'
             }
         },
         scales: {
